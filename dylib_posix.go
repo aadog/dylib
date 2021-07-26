@@ -139,10 +139,10 @@ func NewLazyDLL(name string) *LazyDLL {
 		return m
 	}
 	// 导入调用的, 实现一个动态调用call的，主要是为了解决异常问题
-	m.mySyscall = m.NewProc("MySyscall")
-	if m.mySyscall.Find() != nil {
-		m.mySyscall = nil
-	}
+	//m.mySyscall = m.NewProc("MySyscall")
+	//if m.mySyscall.Find() != nil {
+	//	m.mySyscall = nil
+	//}
 
 	return m
 }
